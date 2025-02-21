@@ -2,27 +2,28 @@
 
 1. JDK, JVM, và JRE khác nhau như thế nào? Vai trò của từng thành phần trong hệ sinh thái Java?
 
-    Answer:
+    Answer:JDK là công cụ để phát triển các ứng dụng, phền mềm java, chứa jre,javac. Jre là 1 phần của jdk, là môi trường để chạy byte code java Jvm là 1 phần của Jre,dịch và thực thi byte code java trên từng hệ đh,. quản lý bộ nhớ.
+
 
 2. JDK có những công cụ nào quan trọng cho lập trình viên Java?
 
-    Answer:
+    Answer: thư viện, debug, compiler
 
 3. JVM hoạt động như thế nào khi bạn chạy một chương trình Java?
 
-    Answer:
+    Answer: chuyển đổi byte code --> mã máy, quản lý bộ nhớ , tối ưu hiệu suất JIT
 
 4. Có những thành phần quan trọng nào bên trong JVM?
 
-	Answer:
+	Answer: Class loader, execution engine, runtime memory area
 
 5. JVM quản lý bộ nhớ như thế nào? Các vùng nhớ quan trọng trong JVM là gì?
 
-    Answer:
+    Answer: phân vùng bộ nhớ để qly. Method area lưu static,class method,var, Heap memory lưu các object, Stack memory lưu local variable, PC trỏ tới dòng lệch tiếp theo để thực thi,Native method stack là 1  phương thức liên kết với hệ thống máy, đc viết bởi C/C++ và khai báo = từ khoá native
 
 6. Class Metadata (Method Area) trong JVM có vai trò gì?
 
-    Answer:
+    Answer:lưu metadata của class, byte code method, constrant pool, code của method/constructor,static variable
 
 7. PermGen và Metaspace khác nhau như thế nào? Tại sao Java chuyển từ PermGen sang Metaspace từ Java 8?
 
